@@ -10,7 +10,6 @@ const galleyMarkup = createGallery(galleryItems);
 
 
 galleryBox.insertAdjacentHTML('afterbegin', galleyMarkup);
-galleryBox.addEventListener('click', onImgClick);
 
 console.log(createGallery(galleryItems));
 function createGallery(galleryItems) {
@@ -33,17 +32,8 @@ function createGallery(galleryItems) {
         .join("");
 };
 
-
-function onImgClick(event) {
-    event.preventDefault();
-    if (!event.target.classList.contains("gallery__image")) {
-        return;
-    }
-    var lightbox = new SimpleLightbox('.gallery a', {
+ var lightbox = new SimpleLightbox('.gallery a', {
         enableKeyboard: true,
         navText: ['←','→']
     });
-   
-}
-
 
