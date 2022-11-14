@@ -43,17 +43,7 @@ function onImgClick(event) {
         enableKeyboard: true,
         navText: ['←','→']
     });
-    // const instance = basicLightbox.create(`
-    //     <div class="modal"> 
-    //     <img src="${event.target.dataset.source}">
-    //     </div>
-    //    `, {
-    //     onShow: (instance) => {
-    //         instance.element().querySelector(".modal").onclick = instance.close
-    //        }
-    // })
-
-    // instance.show();
+   
 }
 
 
