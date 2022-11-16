@@ -20,7 +20,8 @@ function fillInFormInput(el) {
     const savedData = JSON.parse(localStorage.getItem(STORAGE_KYE));
 
     if (savedData) {
-    
+        message.value = savedData.message;
+        email.value = savedData.email;
     }
     console.log(Object.values(savedData));
     
