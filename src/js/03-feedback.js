@@ -23,7 +23,7 @@ function fillInFormInput(el) {
         message.value = savedData.message;
         email.value = savedData.email;
     }
-    console.log(Object.values(savedData));
+    console.log(savedData);
     
 }
 
