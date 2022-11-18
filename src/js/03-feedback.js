@@ -33,6 +33,7 @@ function onFormSubmit(event) {
     event.preventDefault(); 
     if (email.value === "" || message.value === "") {
         alert('Всі поля мають бути заповнені');  
+        return false;
     }
     console.log(JSON.parse(localStorage.getItem(STORAGE_KYE)));
     event.target.reset();
